@@ -1,9 +1,12 @@
 <template>
-  <FormularioExample></FormularioExample>
+
+  <PostList></PostList>
+
 </template>
 
 <script lang="ts" setup>
-import FormularioExample from "./components/FormularioExample.vue";
+import PostList from './components/PostList.vue'
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>
