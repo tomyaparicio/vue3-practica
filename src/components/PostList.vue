@@ -5,7 +5,9 @@
       :key="elm.title"
       :title="elm.title"
       :content="elm.content"
-      @sayHi="showAlert"
+      @sayHi="showAlert" 
+      @hola="hola2"
+      
     >
     </PostDetail>
   </div>
@@ -26,8 +28,14 @@ let info: Array<Post> = [
   { title: "Post 4", content: "texto ejemplo 4" },
   { title: "Post 5", content: "texto ejemplo 5" },
 ];
+
+
 function showAlert(msg:string){
   alert(msg)
+}
+
+function hola2(hola4:string){
+  alert(hola4)
 }
 </script>
 
