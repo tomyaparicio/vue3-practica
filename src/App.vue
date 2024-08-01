@@ -1,12 +1,12 @@
 <template>
   <v-app>
     <v-main>
-      <JulioPaga/>
+      <ComputedExample/>
     </v-main>
   </v-app>
 </template>
 
 <script lang="ts" setup>
-import JulioPaga from './components/JulioPaga.vue'
+import ComputedExample from './components/ComputedExample.vue'
 
 </script>

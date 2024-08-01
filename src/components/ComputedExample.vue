@@ -1,20 +1,22 @@
 <template>
-  <div>
-    <input type="text" v-model="messege"/>
+  <v-row class="mx-2 my-2">
+    <v-col cols="6" class="box">
+    <v-text-field type="text" v-model="messege"></v-text-field>
     <H3>{{ messege }}</H3>
     <h3>{{ reverseMessage }}</h3>
-  </div>
+    <v-spacer></v-spacer>
+    <v-btn class="boton" color="primary">hola</v-btn>
+    </v-col>
+  </v-row>
 </template>
 
 <script lang="ts" setup>
 
 import { ref, computed, Ref } from 'vue'
 
-      let messege:Ref<string> = ref('')
-      const reverseMessage:Ref<string> = computed(() => messege.value.split('').reverse().join(''))
+      let messege= ref('')
+      const reverseMessage = computed(() => messege.value.split('').reverse().join(''))
   
-
- 
 
 // OPTION API
 
@@ -38,4 +40,18 @@ import { ref, computed, Ref } from 'vue'
 
 </script>
 
-<style scoped></style>
+
+
+<style scoped>
+.box{ 
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.boton{
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+</style>
